@@ -31,10 +31,10 @@ class Vk:
 
     def send_message(
             self,
-            peer_ids: list[str],
-            text: str = None,
-            attachments: list[str] = None,
-            keyboard: VkKeyboard = None
+            peer_ids,
+            text=None,
+            attachments=None,
+            keyboard=None
     ):
         params = {
             "peer_ids": peer_ids,
